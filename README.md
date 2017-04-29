@@ -4,7 +4,7 @@ Showcasing the [beta version demo](https://www.youtube.com/watch?v=6U0AdTji1tA)
 
 [Scripting capabilities](https://www.youtube.com/watch?v=UJmuqbfEaM0)
 
-Cerberus showdown automated grinding [crash-test](https://www.youtube.com/watch?v=n6kIWWtbO7E)
+Cerberus showdown automated grinding [3-hour demo](https://www.youtube.com/watch?v=-xvDRwB4QEk)
 
 # Scripting Zooey with Lua
 
