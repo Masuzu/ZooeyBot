@@ -4,7 +4,7 @@ Zooey Bot is a bot for Granblue Fantasy which can:
 - farm story quests, free quests, special quests ([Dimension Halo demo](https://youtu.be/S_esoRe9xtM)) and even event quests (showdowns, guild wars) on its own
 - **[slime-blast](https://www.youtube.com/watch?v=GKHdazIbK_8)** using two accounts on a _same_ computer. Other co-op quests can be used too, such as the EX1-3 stage for creed farming.
 - let the end-user create his own scripts to **[configure the combat behaviour](https://www.youtube.com/watch?v=SwWNsTNXWSc)**. This opens an infinite world of possibilities to help you tackle the harder quests.
-- clear the nightmare mode when one appears ([Cerberus showdown demo](https://www.youtube.com/watch?v=-xvDRwB4QEk))
+- clear the nightmare mode when one appears ([Dimension Halo demo](https://youtu.be/S_esoRe9xtM), [Cerberus showdown demo](https://www.youtube.com/watch?v=-xvDRwB4QEk))
 - choose summons among a user-defined list of preferences, and refresh summons when some are not available (check the first minutes of the Dimensional Halo demo above)
 - refill AP on its own when needed
 - stop automatically when the captcha screen appears, when X AP potions were used or when Y minutes were elapsed
@@ -21,7 +21,7 @@ By design from Google, the only way to know whether a Chrome extension is used i
 
 Just to give you some context, this allowed players to increase the speed of the animations by a significant amount, resulting in faster turns and thus much more damage dealt than regular players. This was achieved by *modifying* some of the Javascript variables on the GBF webpage. Detecting that a variable has an impossible value in your webpage is easy, isn't it? Bingo!
 
-Zooey does not mess with any of the elements of the HTML page, neither does it try to modify any of the Javascript variables on the GBF webpage. 
+**Zooey does not mess with any of the elements of the HTML page, neither does it try to modify any of the Javascript variables on the GBF webpage.**
 
 # Resources
 
