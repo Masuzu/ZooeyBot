@@ -1,44 +1,42 @@
-# ZooeyBot
+# Who is Zooey?
 
-Showcasing the [beta version demo](https://www.youtube.com/watch?v=6U0AdTji1tA)
+Zooey Bot is a bot for Granblue Fantasy which can:
+- farm story quests, free quests, special quests ([Dimension Halo demo](https://youtu.be/S_esoRe9xtM)) and even event quests (showdowns, guild wars) on its own
+- **[slime-blast](https://www.youtube.com/watch?v=GKHdazIbK_8)** using two accounts on a _same_ computer. Other co-op quests can be used too, such as the EX1-3 stage for creed farming.
+- let the end-user create his own scripts to **[configure the combat behaviour](https://www.youtube.com/watch?v=SwWNsTNXWSc)**. This opens an infinite world of possibilities to help you tackle the harder quests.
+- clear the nightmare mode when one appears ([Cerberus showdown demo](https://www.youtube.com/watch?v=-xvDRwB4QEk))
+- choose summons among a user-defined list of preferences, and refresh summons when some are not available (check the first minutes of the Dimensional Halo demo above)
+- refill AP on its own when needed
+- stop automatically when the captcha screen appears, when X AP potions were used or when Y minutes were elapsed
 
-[Scripting capabilities](https://www.youtube.com/watch?v=UJmuqbfEaM0)
+It is compatible with Viramate skill and summon hotkeys, should you use it. It is generally faster to use the hotkeys instead of clicking on the character whose ability you want to use, then on that ability icon.
 
-Cerberus showdown automated grinding [3-hour demo](https://www.youtube.com/watch?v=-xvDRwB4QEk)
+Zooey Bot consists in an executable program and a Chrome Extension. Contrary to Chrome Web Store extensions which can be tracked by ID (such as Viramate or AnCheera), Zooey Bot has no fixed ID: its ID will be different across all the users and can be easily *regenerated on demand*. Zooey does not inject any Javascript code or HTML contents tampering with the original GBF webpage. As you can see in the demo videos, Zooey controls your mouse and keyboard inputs the same way as a human would do: click positions, mouse trajectory and delays are all randomized.
 
-# Scripting Zooey with Lua
+# Why Viramate or (insert here any other extension name which can be found on the Chrome store) can be easily detected?
 
-You can overwrite the behaviour of Zooey during battles using your own Lua scripts. You can find plenty of Lua tutorials online but all you will need most of the time is conditions using the standard `if then else end` pattern which exists in several other languages.
+By design from Google, the only way to know whether a Chrome extension is used is to know its ID. As stated above, Chrome Web Store extensions have a fixed ID from the first day they are released on the store.
 
-You will find some examples in the `Scripts` directory.
+# Why tampering with frame per seconds and other similar hacks can be easily detected?
 
-## Referencing characters
-You can reference your characters by name using the syntax following syntax `characters["Orchid"]`. This also works with Unicode characters: you would use `characters["オーキス"]` if you were using the Japanese language settings. We will use Orchid for illustrative purposes in the other sections below.
+Just to give you some context, this allowed players to increase the speed of the animations by a significant amount, resulting in faster turns and thus much more damage dealt than regular players. This was achieved by *modifying* some of the Javascript variables on the GBF webpage. Detecting that a variable has an impossible value in your webpage is easy, isn't it? Bingo!
 
-You can also reference characters by position: `character_1` refers to the character at the first position and `character_4` to the one at the fourth position. You can't reference characters in your back row.
+Zooey does not mess with any of the elements of the HTML page, neither does it try to modify any of the Javascript variables on the GBF webpage. 
 
-## Accessing characters data
-| Field | Description |
-| ----- | ----- |
-| `characters["Orchid"].name` | will return a Unicode string, "Orchid" in this case |
-| `characters["Orchid"].skill_1_available` | true if Orchid's first skill is available, false otherwise |
-| `characters["Orchid"].skill_4_available` | true if Orchid's fourth skill is available, false otherwise |
-| `characters["Orchid"].hp` | current HP of the character (positive integer) |
-| `characters["Orchid"].max_hp` | max HP of the character (positive integer) |
-| `characters["Orchid"].charge_gauge` | charge gauge of the character (positive integer) |
-| `characters["Orchid"].is_alive` | true if Orchid is still alive, false otherwise |
+# Resources
 
-## Global state of the raid
+[Setup and installation](https://github.com/Masuzu/ZooeyBot/wiki/Setup-and-installation)
 
-The current battle/stage index can be accessed via the variable `battle`: you can use it in multi-stage quests to perform some actions in some stage(s).
+[Basic mode - story quests, free quests and special quests automated farming](https://github.com/Masuzu/ZooeyBot/wiki/NYET)
 
-The current turn of the current battle can be retrieved via the variable `turn`. It is an integer starting from 1 and which will be incremented at each turn, or reset when the stage changes or when the battle ends.
+[Event mode - Dimensionial Halo, events and showdowns automated farming](https://github.com/Masuzu/ZooeyBot/wiki/NYET)
 
-## Using skills
-`characters["Orchid"]:UseSkill(<skill_index>)`/`character_2:UseSkill(<skill_index>)`. The skill index should be an integer number between 1 and 4 included. If you try to use a skill while it is on cooldown, the command will be ignored.
+[Slave mode (slime-blasting)](https://github.com/Masuzu/ZooeyBot/wiki/Slave-mode-(slime-basting))
 
-## Charge attack
-You can enable or disable charge attacks using `EnableChargeAttack` and `DisableChargeAttack`.
+[Lua scripts](https://github.com/Masuzu/ZooeyBot/wiki/Lua-scripts)
 
-## Using summons
-`Summon(<summon index as an integer number>)`. The summon index should be an integer number between 1 and 6 included. If you try to use a summon while it is on cooldown, the command will be ignored.
+[Configuration file ZooeyBot.ini](https://github.com/Masuzu/ZooeyBot/wiki/NYET)
+
+[Regenerating your Zooey extension ID](https://github.com/Masuzu/ZooeyBot/wiki/Slave-mode-(slime-basting))
+
+[Frequently Asked Questions](https://github.com/Masuzu/ZooeyBot/wiki/FAQ)
