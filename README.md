@@ -13,11 +13,11 @@ It is compatible with Viramate skill and summon hotkeys, should you use it. It i
 
 Zooey Bot consists in an executable program and a Chrome Extension. Contrary to Chrome Web Store extensions which can be tracked by ID (such as Viramate or AnCheera), Zooey Bot has no fixed ID: its ID will be different across all the users and can be easily *regenerated on demand*. Zooey does not inject any Javascript code or HTML contents tampering with the original GBF webpage. As you can see in the demo videos, Zooey controls your mouse and keyboard inputs the same way as a human would do: click positions, mouse trajectory and delays are all randomized.
 
-# Why Viramate or (insert here any other extension name which can be found on the Chrome store) can be easily detected?
+## Why Viramate or (insert here any other extension name which can be found on the Chrome store) can be easily detected?
 
 By design from Google, the only way to know whether a Chrome extension is used is to know its ID. As stated above, Chrome Web Store extensions have a fixed ID from the first day they are released on the store.
 
-# Why tampering with frame per seconds and other similar hacks can be easily detected?
+## Why tampering with frame per seconds and other similar hacks can be easily detected?
 
 Just to give you some context, this allowed players to increase the speed of the animations by a significant amount, resulting in faster turns and thus much more damage dealt than regular players. This was achieved by *modifying* some of the Javascript variables on the GBF webpage. Detecting that a variable has an impossible value in your webpage is easy, isn't it? Bingo!
 
