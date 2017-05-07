@@ -1,21 +1,23 @@
 # Who is Zooey?
 
-Zooey Bot is a bot for Granblue Fantasy which can:
+Zooey is a bot for Granblue Fantasy which can:
 - farm story quests, free quests, special quests ([Dimension Halo demo](https://youtu.be/S_esoRe9xtM)) and even event quests (showdowns, guild wars) on its own
 - **[slime-blast](https://www.youtube.com/watch?v=GKHdazIbK_8)** using two accounts on a _same_ computer. Other co-op quests can be used too, such as the EX1-3 stage for creed farming.
-- let the end-user create his own scripts to **[configure the combat behaviour](https://www.youtube.com/watch?v=SwWNsTNXWSc)**. This opens an infinite world of possibilities to help you tackle the harder quests.
-- clear the nightmare mode when one appears ([Dimension Halo demo](https://youtu.be/S_esoRe9xtM), [Cerberus showdown demo](https://www.youtube.com/watch?v=-xvDRwB4QEk))
+- parse user scripts to **[use skills and summons](https://www.youtube.com/watch?v=SwWNsTNXWSc)** and customize the sequences of actions performed during fights. This offers a plethora of possibilities to help you tackle the harder quests.
+- proceed to the nightmare mode stage automatically when it appears ([Dimension Halo demo](https://youtu.be/S_esoRe9xtM), [Cerberus showdown demo](https://www.youtube.com/watch?v=-xvDRwB4QEk))
 - choose summons among a user-defined list of preferences, and refresh summons when some are not available (check the first minutes of the Dimensional Halo demo above)
 - refill AP on its own when needed
 - stop automatically when the captcha screen appears, when X AP potions were used or when Y minutes were elapsed
 
 It is compatible with Viramate skill and summon hotkeys, should you use it. It is generally faster to use the hotkeys instead of clicking on the character whose ability you want to use, then on that ability icon.
 
-Zooey Bot consists in an executable program and a Chrome Extension. Contrary to Chrome Web Store extensions which can be tracked by ID (such as Viramate or AnCheera), Zooey Bot has no fixed ID: its ID will be different across all the users and can be easily *[regenerated on demand](https://github.com/Masuzu/ZooeyBot/wiki/Regenerating-your-Zooey-extension-ID)*. Zooey does not inject any Javascript code or HTML contents tampering with the original GBF webpage. As you can see in the demo videos, Zooey controls your mouse and keyboard inputs the same way as a human would do: click positions, mouse trajectory and delays are all randomized.
+Zooey Bot consists in an executable program and a Chrome Extension. Contrary to Chrome Web Store extensions which can be tracked by ID (such as Viramate or AnCheera), the Zooey Bot extension has no fixed ID: its ID is generated randomly at installation and can be easily *[regenerated on demand](https://github.com/Masuzu/ZooeyBot/wiki/Regenerating-your-Zooey-extension-ID)*. Zooey does not inject any Javascript code or HTML contents tampering with the original GBF webpage. As you can see in the demo videos, Zooey controls your mouse and keyboard inputs in the same way as a human would do: click positions, mouse trajectories and delays are all randomized.
 
 Zooey Bot does not store any personal information about the user account.
 
 # [Getting started](https://github.com/Masuzu/ZooeyBot/wiki/Setup-and-installation)
+
+# [Download website](https://poker-bot.azurewebsites.net/ZooeyBot/en/Home)
 
 ## Why Viramate or (insert here any other extension name which can be found on the Chrome store) can be easily detected?
 
