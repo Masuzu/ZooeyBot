@@ -11,7 +11,9 @@ Zooey Bot is a bot for Granblue Fantasy which can:
 
 It is compatible with Viramate skill and summon hotkeys, should you use it. It is generally faster to use the hotkeys instead of clicking on the character whose ability you want to use, then on that ability icon.
 
-Zooey Bot consists in an executable program and a Chrome Extension. Contrary to Chrome Web Store extensions which can be tracked by ID (such as Viramate or AnCheera), Zooey Bot has no fixed ID: its ID will be different across all the users and can be easily *regenerated on demand*. Zooey does not inject any Javascript code or HTML contents tampering with the original GBF webpage. As you can see in the demo videos, Zooey controls your mouse and keyboard inputs the same way as a human would do: click positions, mouse trajectory and delays are all randomized.
+Zooey Bot consists in an executable program and a Chrome Extension. Contrary to Chrome Web Store extensions which can be tracked by ID (such as Viramate or AnCheera), Zooey Bot has no fixed ID: its ID will be different across all the users and can be easily *[regenerated on demand](https://github.com/Masuzu/ZooeyBot/wiki/Regenerating-your-Zooey-extension-ID)*. Zooey does not inject any Javascript code or HTML contents tampering with the original GBF webpage. As you can see in the demo videos, Zooey controls your mouse and keyboard inputs the same way as a human would do: click positions, mouse trajectory and delays are all randomized.
+
+Zooey Bot does not store any personal information about the user account.
 
 # [Getting started](https://github.com/Masuzu/ZooeyBot/wiki/Setup-and-installation)
 
@@ -29,16 +31,14 @@ Just to give you some context, this allowed players to increase the speed of the
 
 [Setup and installation](https://github.com/Masuzu/ZooeyBot/wiki/Setup-and-installation)
 
-[Basic mode - story quests, free quests and special quests automated farming](https://github.com/Masuzu/ZooeyBot/wiki/NYET)
+[Basic mode - story quests, free quests and special quests automated farming](https://github.com/Masuzu/ZooeyBot/wiki/Basic-mode---story-quests,-free-quests-and-special-quests-automated-farming)
 
-[Event mode - Dimensionial Halo, events and showdowns automated farming](https://github.com/Masuzu/ZooeyBot/wiki/NYET)
+[Event mode - Dimensionial Halo, events and showdowns automated farming](https://github.com/Masuzu/ZooeyBot/wiki/Event-mode)
 
 [Slave mode (slime-blasting)](https://github.com/Masuzu/ZooeyBot/wiki/Slave-mode-(slime-basting))
 
 [Lua scripts](https://github.com/Masuzu/ZooeyBot/wiki/Lua-scripts)
 
-[Configuration file ZooeyBot.ini](https://github.com/Masuzu/ZooeyBot/wiki/NYET)
-
-[Regenerating your Zooey extension ID](https://github.com/Masuzu/ZooeyBot/wiki/Slave-mode-(slime-basting))
+[Regenerating your Zooey extension ID](https://github.com/Masuzu/ZooeyBot/wiki/Regenerating-your-Zooey-extension-ID)
 
 [Frequently Asked Questions](https://github.com/Masuzu/ZooeyBot/wiki/FAQ)
