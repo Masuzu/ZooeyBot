@@ -6,6 +6,7 @@ if turn == 1 then
   character_1:UseSkill(1):WithWaitTime(3600)
   character_1:UseSkill(3)
   character_2:UseSkill(1):WithWaitTime(1000)
+  --[[Use Zooey's Conjunction--]] 
   character_3:UseSkill(2):WithWaitTime(4100)
   character_3:UseSkill(1)
   character_3:UseSkill(3)
@@ -14,6 +15,7 @@ if turn == 1 then
   character_4:UseSkill(1)
 end
 if turn == 2 then
+  --[[Use Clarity, which is bound to the second skill in my case--]] 
   if (enemy_1.hp / enemy_1.max_hp < 0.5) then
     character_1:UseSkill(2):WithWaitTime(1000)
   end
