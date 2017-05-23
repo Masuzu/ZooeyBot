@@ -19,5 +19,6 @@ if turn == 2 then
   if (enemy_1.hp / enemy_1.max_hp < 0.5) then
     character_1:UseSkill(2):WithWaitTime(1000)
   end
+  --[[Use Narmaya's ODA buff--]] 
   character_4:UseSkill(3)
 end
