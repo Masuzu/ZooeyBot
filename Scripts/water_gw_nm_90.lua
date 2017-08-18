@@ -13,7 +13,7 @@ end
 
 if enemy_1.hp_percentage > 11 then
   --[[Siegfried--]]
-  if characters["Siegfried"] ~= nil
+  if characters["Siegfried"] ~= nil then
     characters["Siegfried"]:UseSkill(2)
     characters["Siegfried"]:UseSkill(1)
   end
