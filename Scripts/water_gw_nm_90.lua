@@ -48,7 +48,7 @@ if enemy_1.hp_percentage < 50 then
 	character_4:UseSkill(3)
   end
 end
-if enemy_1.hp_percentage < 35 then
+if enemy_1.hp_percentage < 45 then
   --[[Summon Godsworn Alexiel--]]
   Summon(1)
 end
