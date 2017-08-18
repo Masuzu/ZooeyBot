@@ -1,4 +1,4 @@
---[[Elysian (Miserable mist, Clear, Call of the Abyss), Siegfried, Mahira, Razia, De La Fille, Cagliostro, Godsworn Alexiel x Titan--]]
+--[[Elysian (Miserable mist, Clear, Call of the Abyss), Siegfried, Mahira, Ayer, De La Fille, Cagliostro, Godsworn Alexiel x Titan--]]
 if turn == 1 then
   DisableChargeAttack()
   character_1:UseSkill(1):WithWaitTime(3200)
@@ -9,14 +9,8 @@ if turn == 1 then
   character_1:UseSkill(2)
   --[[Mahira's defense down debuff--]]
   character_3:UseSkill(2)
-end
-
-if enemy_1.hp_percentage > 11 then
-  --[[Siegfried--]]
-  if characters["Siegfried"] ~= nil then
-    characters["Siegfried"]:UseSkill(2)
-    characters["Siegfried"]:UseSkill(1)
-  end
+  character_4:UseSkill(1)
+  character_4:UseSkill(1)
 end
 
 --[[React to special boss triggers--]]
@@ -30,9 +24,7 @@ end
 if enemy_1.hp_percentage <= 65 then
   if booleans["Nearing 50% trigger"] == nil then
     booleans["Nearing 50% trigger"] = true
-    --[[Razia's substitute--]]
     EnableChargeAttack()
-    character_4:UseSkill(1)
 	--[[Summon Titan--]]
 	Summon(6)
   end
@@ -41,17 +33,26 @@ if enemy_1.hp_percentage < 50 then
   if booleans["50% trigger reached"] == nil then
     booleans["50% trigger reached"] = true
 	Wait(5000)
-	character_4:UseSkill(2):WithWaitTime(4100)
-    UseGreenPotionOnPartyMember(4)
-	--[[Cast Mahira's special buff--]]
+	if character_4.hp_percentage < 25 then
+	  UseGreenPotionOnPartyMember(4)
+	end
     character_3:UseSkill(1)
-	character_4:UseSkill(3)
   end
 end
+
+if enemy_1.hp_percentage > 15 then
+  --[[Siegfried--]]
+  if characters["Siegfried"] ~= nil then
+    characters["Siegfried"]:UseSkill(2)
+    characters["Siegfried"]:UseSkill(1)
+  end
+end
+
 if enemy_1.hp_percentage < 45 then
   --[[Summon Godsworn Alexiel--]]
   Summon(1)
 end
+
 if turn > 1 and character_1.charge_gauge < 90 then
   character_1:UseSkill(4)
 end
