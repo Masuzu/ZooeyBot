@@ -1,4 +1,4 @@
---[[Elysian (Miserable mist, Clear, Call of the Abyss), Siegfried, Mahira, Razia, De La Fille, Cagliostro, Alexiel x Titan--]]
+--[[Elysian (Miserable mist, Clear, Call of the Abyss), Siegfried, Mahira, Razia, De La Fille, Cagliostro, Godsworn Alexiel x Titan--]]
 if turn == 1 then
   DisableChargeAttack()
   character_1:UseSkill(1):WithWaitTime(3200)
