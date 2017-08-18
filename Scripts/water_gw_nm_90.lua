@@ -10,11 +10,14 @@ if turn == 1 then
   --[[Mahira's defense down debuff--]]
   character_3:UseSkill(2)
 end
+
 if enemy_1.hp_percentage > 11 then
   --[[Siegfried--]]
   character_2:UseSkill(2)
   character_2:UseSkill(1)
 end
+
+--[[React to special boss triggers--]]
 if enemy_1.hp_percentage < 75 and enemy_1.hp_percentage > 50 then
   if booleans["75% trigger reached"] == nil then
     booleans["75% trigger reached"] = true
