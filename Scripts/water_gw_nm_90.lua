@@ -45,11 +45,13 @@ if enemy_1.hp_percentage < 50 then
 end
 if enemy_1.hp_percentage < 35 then
   --[[Summon Godsworn Alexiel--]]
-  
+  Summon(1)
 end
 if turn > 1 and character_1.charge_gauge < 90 then
   character_1:UseSkill(4)
 end
+
+--[[In case backline characters enter into the fray--]]
 if characters["De La Fille"] ~= nil then
   characters["De La Fille"]:UseSkill(1)
   characters["De La Fille"]:UseSkill(3)
