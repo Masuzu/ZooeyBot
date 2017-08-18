@@ -10,7 +10,6 @@ if turn == 1 then
   --[[Mahira's defense down debuff--]]
   character_3:UseSkill(2)
   character_4:UseSkill(1)
-  character_4:UseSkill(1)
 end
 
 --[[React to special boss triggers--]]
@@ -33,10 +32,21 @@ if enemy_1.hp_percentage < 50 then
   if booleans["50% trigger reached"] == nil then
     booleans["50% trigger reached"] = true
 	Wait(5000)
-	if character_4.hp_percentage < 25 then
+	if character_1.hp_percentage < 23 then
+	  UseGreenPotionOnPartyMember(1)
+	end
+	if character_2.hp_percentage < 23 then
+	  UseGreenPotionOnPartyMember(2)
+	end
+	if character_3.hp_percentage < 23 then
+	  UseGreenPotionOnPartyMember(3)
+	end
+	if character_4.hp_percentage < 23 then
 	  UseGreenPotionOnPartyMember(4)
 	end
-    character_3:UseSkill(1)
+	if character_3.name == "Mahira" then
+      character_3:UseSkill(1)
+	end
   end
 end
 
@@ -64,5 +74,4 @@ if characters["De La Fille"] ~= nil then
 end
 if characters["Cagliostro"] ~= nil then
   characters["Cagliostro"]:UseSkill(2)
-  characters["Cagliostro"]:UseSkill(3)
 end
