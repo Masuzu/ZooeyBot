@@ -13,8 +13,10 @@ end
 
 if enemy_1.hp_percentage > 11 then
   --[[Siegfried--]]
-  character_2:UseSkill(2)
-  character_2:UseSkill(1)
+  if characters["Siegfried"] ~= nil
+    characters["Siegfried"]:UseSkill(2)
+    characters["Siegfried"]:UseSkill(1)
+  end
 end
 
 --[[React to special boss triggers--]]
