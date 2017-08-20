@@ -31,6 +31,7 @@ end
 if enemy_1.hp_percentage < 50 then
   if booleans["50% trigger reached"] == nil then
     booleans["50% trigger reached"] = true
+	--[[Wait for the Ougi lockout period to end--]]	
 	Wait(5000)
 	if character_1.hp_percentage < 23 then
 	  UseGreenPotionOnPartyMember(1)
