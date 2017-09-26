@@ -1,5 +1,5 @@
 --[[Chaos Ruler (Rain of Arrows, Unpredictable, Splitting Spirit), Lecia, Melissabelle, summer Siegfried. Tiamat_1 x Setekh_1/Anat_1--]]
---[[Summon Morrigna when available, usually never happens as the battles ends before--]]
+--[[Clear time: 6-7 turns--]]
 EnableChargeAttack()
 if characters["<main_character>"] ~= nil and characters["<main_character>"].hp_percentage <=27 and enemy_1.hp_percentage > 13 then
   UseGreenPotionOnPartyMember(1)
