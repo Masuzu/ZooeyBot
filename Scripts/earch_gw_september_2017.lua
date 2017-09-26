@@ -1,8 +1,10 @@
 --[[Chaos Ruler (Rain of Arrows, Unpredictable, Splitting Spirit), Lecia, Melissabelle, summer Siegfried. Tiamat_1 x Setekh_1/Anat_1--]]
 --[[Summon Morrigna when available, usually never happens as the battles ends before--]]
-Summon(5)
+EnableChargeAttack()
+if characters["<main_character>"] ~= nil and characters["<main_character>"].hp_percentage <=27 and enemy_1.hp_percentage > 13 then
+  UseGreenPotionOnPartyMember(1)
+end
 if turn == 1 then
-  EnableChargeAttack()
   Summon(6)
   character_1:UseSkill(4)
   characters["Melissabelle"]:UseSkill(1)
@@ -26,6 +28,8 @@ if characters["<main_character>"] ~= nil then
   characters["<main_character>"]:UseSkill(2)
 end
 if turn == 2 then
+  --[[Wait a bit after the 2-chain Ougi on the first turn]]
+  Wait(1000)
   characters["Lecia"]:UseSkill(1)
   --[["Consume" Lecia's buff orders]]
   characters["Lecia"]:UseSkill(3)
@@ -44,7 +48,6 @@ if enemy_1.hp_percentage <= 50 then
     characters["<main_character>"]:UseSkill(1)
   end
 end
-if characters["Gawain"] ~= nil then
+if characters["Gawain"] ~= nil and enemy_1.hp_percentage >= 13 then
   characters["Gawain"]:UseSkill(2)
-  characters["Gawain"]:UseSkill(1)
 end
