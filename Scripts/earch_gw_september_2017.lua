@@ -13,11 +13,8 @@ end
 if characters["Siegfried"] ~= nil then
   characters["Siegfried"]:UseSkill(3)
 end
---[[Use Unpredictable and rain of Arrow off cooldown]]
-if characters["<main_character>"] ~= nil then
-  characters["<main_character>"]:UseSkill(3)
-end
 if turn == 1 then
+  characters["<main_character>"]:UseSkill(3)
   --[[Lecia's buff orders]]
   characters["Lecia"]:UseSkill(3)
   character_4:UseSkill(2)
@@ -28,7 +25,6 @@ if characters["<main_character>"] ~= nil then
   characters["<main_character>"]:UseSkill(2)
 end
 if turn == 2 then
-  --[[Wait a bit after the 2-chain Ougi on the first turn]]
   Wait(1000)
   characters["Lecia"]:UseSkill(1)
   --[["Consume" Lecia's buff orders]]
