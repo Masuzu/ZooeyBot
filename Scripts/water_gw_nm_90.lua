@@ -1,7 +1,7 @@
 --[[Elysian (Miserable mist, Clear, Call of the Abyss), Siegfried, Mahira, Ayer, De La Fille, Cagliostro, Godsworn Alexiel x Titan--]]
 if turn == 1 then
   DisableChargeAttack()
-  character_1:UseSkill(1):WithWaitTime(3200)
+  character_1:WithWaitTime(3200):UseSkill(1)
   character_1:UseSkill(4)
   --[[Mahira's echo buff--]]
   character_3:UseSkill(3)
