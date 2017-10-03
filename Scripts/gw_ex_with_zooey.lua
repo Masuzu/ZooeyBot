@@ -10,18 +10,18 @@ if booleans["assault_time"] == nil then
     character_1:UseSkill(3)
     character_1:UseSkill(4)
     --[[Use Zooey's Conjunction--]] 
-    characters["Zooey"]:UseSkill(2):WithWaitTime(4100)
+    characters["Zooey"]:WithWaitTime(4100):UseSkill(2)
     characters["Zooey"]:UseSkill(1)
     characters["Zooey"]:UseSkill(3)
     characters["Vira"]:UseSkill(2)
     character_1:UseSkill(1)
     --[[Use Narmaya buffs--]] 
     characters["Narmaya"]:UseSkill(2)
-    characters["Narmaya"]:UseSkill(1):WithWaitTime(3000)
+    characters["Narmaya"]:WithWaitTime(3000):UseSkill(1)
   end
   if turn == 2 then
     --[[Use Narmaya's ODA buff--]] 
-    characters["Narmaya"]:UseSkill(3):WithWaitTime(1500)
+    characters["Narmaya"]:WithWaitTime(1500):UseSkill(3)
   end
 else
   --[[Command list for assault time (AT)--]]
@@ -29,7 +29,7 @@ else
     character_1:UseSkill(3)
     character_1:UseSkill(4)
     --[[Use Zooey's Conjunction--]] 
-    characters["Zooey"]:UseSkill(2):WithWaitTime(4100)
+    characters["Zooey"]:WithWaitTime(4100):UseSkill(2)
     characters["Zooey"]:UseSkill(1)
     characters["Zooey"]:UseSkill(3)
     characters["Vira"]:UseSkill(2)
