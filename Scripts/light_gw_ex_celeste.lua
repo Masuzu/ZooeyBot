@@ -6,7 +6,7 @@ if turn == 1 then
   character_1:WithWaitTime(3600):UseSkill(1)
   character_1:UseSkill(3)
   character_2:WithWaitTime(1000):UseSkill(1)
-  --[[Use Zooey's Conjunction--]] 
+  --[[Use Zooey's Conjuction--]] 
   character_3:WithWaitTime(4100):UseSkill(2)
   character_3:UseSkill(1)
   character_3:UseSkill(3)
