@@ -7,7 +7,7 @@ if booleans["assault_time"] == nil then
   if turn == 1 then
     character_1:UseSkill(2)
     character_1:UseSkill(4)
-    --[[Use Zooey's Conjunction--]] 
+    --[[Use Zooey's Conjuction--]] 
     characters["Zooey"]:UseSkill(2):WithWaitTime(4100)
     characters["Zooey"]:UseSkill(1)
     characters["Vira"]:UseSkill(2)
@@ -23,7 +23,7 @@ if booleans["assault_time"] == nil then
 else
   if turn == 1 then
     character_1:UseSkill(4)
-    --[[Use Zooey's Conjunction--]] 
+    --[[Use Zooey's Conjuction--]] 
     characters["Zooey"]:UseSkill(2):WithWaitTime(4100)
     characters["Zooey"]:UseSkill(1)
     characters["Zooey"]:UseSkill(3)
