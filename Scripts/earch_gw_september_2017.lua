@@ -31,8 +31,8 @@ if turn == 2 then
   characters["Lecia"]:UseSkill(3)
 end
 if characters["Melissabelle"] ~= nil then
-  characters["Melissabelle"]:UseSkill(2):WithWaitTime(3000)
-  characters["Melissabelle"]:UseSkill(3):WithWaitTime(3000)
+  characters["Melissabelle"]:WithWaitTime(3000):UseSkill(2)
+  characters["Melissabelle"]:WithWaitTime(3000):UseSkill(3)
 end
 if characters["Siegfried"] ~= nil then
   characters["Siegfried"]:UseSkill(3)
