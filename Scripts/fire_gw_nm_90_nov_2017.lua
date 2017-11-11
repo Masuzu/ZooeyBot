@@ -1,8 +1,7 @@
 --[[4-turn Fire GW NM 90
-Front line: Luchador (Miserable Mist, Armor Break, Tag Team), Summer Diantha (required), Altair final uncap (or any other water attacker), Anre final uncap (required)
+Front line: Luchador (Miserable Mist, Armor Break, Tag Team), Summer Diantha (required), Altair, Anre final uncap (required)
 Varuna MLB x Varuna MLB or Varuna MLB x Europa
 Xuanwu Shellfists required 
-2+ Fimbuls, 3+ Murgleis
 --]]
 if turn == 1 then
   DisableChargeAttack()
@@ -21,6 +20,8 @@ if turn == 1 then
 end
 if turn == 2 then
   EnableChargeAttack()
-  characters["Diantha"]:UseSkill(2)
+end
+if turn == 3 then
+  --[[Damage cut for the 25% trigger--]]
   characters["Anre"]:UseSkill(3)
 end
