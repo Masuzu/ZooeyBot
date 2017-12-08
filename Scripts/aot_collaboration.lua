@@ -1,3 +1,4 @@
+--[[Main character: Treasure Hunt II, III, IV, Hades/Celeste x Kaguya/White Rabbit/Any]]
 EnableChargeAttack()
 if battle == 1 then
   characters["Narmaya"]:UseSkill(1)
@@ -7,5 +8,5 @@ if battle == 3 then
   character_1:UseSkill(2)
   character_1:UseSkill(3)
   character_1:UseSkill(4)
-  character_4:UseSkill(1)
+  characters["Tien"]:UseSkill(1)
 end
