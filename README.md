@@ -17,7 +17,7 @@ Zooey Bot does not store any personal information about the user account.
 
 # [Getting started](https://github.com/Masuzu/ZooeyBot/wiki/Setup-and-installation)
 
-# [Download website](https://poker-bot.azurewebsites.net/ZooeyBot/en/Home)
+# [Download website](https://gbtools.azurewebsites.net/ZooeyBot/en/Home)
 
 ## Why Viramate or (insert here any other extension name which can be found on the Chrome store) can be easily detected?
 
