@@ -44,3 +44,5 @@ Just to give you some context, this allowed players to increase the speed of the
 [Regenerating your Zooey extension ID](https://github.com/Masuzu/ZooeyBot/wiki/Regenerating-your-Zooey-extension-ID)
 
 [Frequently Asked Questions](https://github.com/Masuzu/ZooeyBot/wiki/FAQ)
+
+Current version patch notes [3.14.0](https://gbtools.azurewebsites.net/ZooeyBot/en/Home/PatchNotes#3-14-0)
