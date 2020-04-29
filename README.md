@@ -45,4 +45,4 @@ Just to give you some context, this allowed players to increase the speed of the
 
 [Frequently Asked Questions](https://github.com/Masuzu/ZooeyBot/wiki/FAQ)
 
-Current version patch notes [3.17.0](https://gbtools.azurewebsites.net/ZooeyBot/en/Home/PatchNotes#3-17-0)
+Current version patch notes [3.17.1](https://gbtools.azurewebsites.net/ZooeyBot/en/Home/PatchNotes#3-17-1)
